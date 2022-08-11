@@ -1,5 +1,5 @@
 void call(){
-    stage("Kraven: Trial"){
+    stage("Build: Maven"){
         println "trial from the kraven library"
     }
 }
