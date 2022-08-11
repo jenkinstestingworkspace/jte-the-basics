@@ -4,5 +4,10 @@ void call(app_env){
         app_env.ip_addresses.each{ ip ->
             println "deploying to ${ip}"
         }
+        if(config.requiresApproval){
+            timeout(time: 5, unit: 'MINUTES') {
+                input 'Approve the deployment?'
+            }
+        }
     }
 }
