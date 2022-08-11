@@ -5,7 +5,7 @@ void call(app_env){
             println "deploying to ${ip}"
         }
         if(config.requiresApproval){
-            timeout(time: 5, unit: 'MINUTES') {
+            timeout(time: 1, unit: 'MINUTES') {
                 input 'Approve the deployment?'
             }
         }
