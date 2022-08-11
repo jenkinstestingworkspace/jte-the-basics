@@ -1,5 +1,5 @@
 void call(){
-    stage("Tester: Test"){
+    stage("Kraven: Trial"){
         println "BEFORE TEST VARIABLE"
         // println "Test Variable ${config.BRANCH_NAME}"
     }
