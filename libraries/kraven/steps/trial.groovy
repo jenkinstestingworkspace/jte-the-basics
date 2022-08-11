@@ -1,5 +1,5 @@
 void call(){
     stage("Build: Maven"){
-        println "trial from the kraven library ${env.BUILD_NUMBER}"
+        println "trial from the kraven library ${config.BUILD_NUMBER}"
     }
 }
